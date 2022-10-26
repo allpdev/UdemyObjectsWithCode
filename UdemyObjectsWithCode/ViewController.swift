@@ -13,10 +13,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
 //Objects With Code
+        
+        let width = view.frame.size.width
+        let height = view.frame.size.height
+        
         let  myLabel = UILabel()
         myLabel.text = "Hi Sano"
         myLabel.textAlignment = .center
-        myLabel.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        myLabel.frame = CGRect(x: width * 0.5 - width * 0.8 / 2, y: height * 0.5 - 50 / 2, width: width * 0.8, height: 50)
         view.addSubview(myLabel)
         
     }
